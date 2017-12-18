@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script type="text/javascript" src="./js/Winwheel.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/TweenMax.min.js"></script>
+</head>
+<body onload = "body_onload()">
+<div align="center">
+    <div class="the_wheel">
+        <canvas id="canvas" width="650" height="700" display="none" onclick="startSpin();">
+            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+        </canvas>
+    </div>
+    <div class="power_controls">
+      <button type="button" class="click-btn-wrap" id = "spin_button" onclick="startSpin();">start</button>
+      <button type="button" class="click-btn-wrap_again" id = "again_button" onclick="playAgain();">play again</button>                
+    </div>
+    <div id="mymodal" class="modal">
+      <div class="modal-content">
+        <div id="modal-header" class="modal-header">
+          <span id="modal_close" class="close" onclick="modal_close();">&times;</span>
+          <a href = " " target="_blank">
+            <h2 id="headline">You won! Congratulations to your bonus!</h2>
+          </a>
+        </div>
+        <div id="modal-body" class="modal-body">
+          <div id="logo" class="logo">
+            <a href=" " target="_blank">
+              <img src="./img/logo.png">
+            </a>
+          </div>            
+          <div id="modal-body-comment">
+            <a href = " " target="_blank">
+            <h3 id="offer">USD 1,000 sign up bonus!</h3>
+            </a>
+          </div>
+          <div id="link_url">
+            <a href=" " target="_blank" class="click-btn-wrap-play">Play now</a>                
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

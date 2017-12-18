@@ -1,0 +1,198 @@
+body {
+    font-family: arial;
+    background-image:url(./img/background.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+audio{
+    display: none;
+}
+/* Sets the background image for the wheel */
+.the_wheel {   
+    background-image: url(./img/wheel_back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 50px;
+}
+#canvas {
+    cursor: pointer;
+}
+h2 {
+    font-family: cursive;
+    text-shadow: 2px 2px #000000;
+}
+.modal {
+    display: none;  
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #49e4e4;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0 10px 50px 10px;
+    border: 9px solid #bfbd2a;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+#link_url a{
+    color: white;
+}
+.modal-header {
+    padding: 2px 16px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+.modal-body {
+    font-size: 30px;  
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.logo img{
+    width: 150px;
+}
+button{
+    margin-top: 25px;
+}
+.click-btn-wrap{
+    font-size: 30px;
+    color: white;
+    width:200px;
+    height: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align:center;
+    outline:none;
+    background-image:-moz-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    background-image:-webkit-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    background-image:-ms-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+}
+.click-btn-wrap_again {
+    font-size: 30px;
+    color: white;
+    width:200px;
+    height: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    background-image: -moz-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    background-image: -webkit-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    background-image: -ms-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    display: none;
+    outline: none;
+}
+.click-btn-wrap-play{
+    display: inline-block;
+    width: 170px;
+    height: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 15px 0 10px;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    border-radius: 42px;
+    text-shadow: 0px 1px 1px rgba(0,18,25,0.21);
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    box-shadow: 0px 3px 21px 0px rgba(121,54,8,0.6);
+    text-underline-position: 0px;
+    text-decoration: none;
+    background-image:-moz-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    background-image:-webkit-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+    background-image:-ms-linear-gradient(113deg, #ee0979 0%, #ff6a00 100%);
+}
+@media screen and (max-device-width: 1024px) {
+    .the_wheel {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-device-width: 767px) {
+    .the_wheel {   
+        background-image: url(./img/wheel_back_mobile.png);
+        margin-top: 150px;
+        padding: 150px;
+    }
+    .modal {
+        padding-top: 300px;
+    }
+    .modal-header {
+        font-size: 45px;
+    }
+    .modal-body {
+        font-size: 35px;
+    }
+    .logo img {
+        width: 250px;
+    }
+    .click-btn-wrap {
+        font-size: 50px;
+        height: 150px;
+        width: 300px;
+        border-radius: 30px;
+    }
+    .click-btn-wrap-play {
+        height: 50px;
+        width: 200px;
+        padding: 30px 0 0px;
+        font-size: 20px;
+    }
+
+    .click-btn-wrap_again {
+        font-size: 50px;
+        height: 150px;
+        width: 300px;
+        border-radius: 30px;
+    }
+}
